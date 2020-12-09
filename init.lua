@@ -14,7 +14,7 @@ local function register_present(c1, c2, lvl)
             if not puncher or not puncher:is_player() then return end
             minetest.chat_send_player(puncher:get_player_name(), "Bring this present to the Christmas shop to redeem it!")
         end,
-        stack_max = 30000
+        stack_max = 65535
     })
     pnum = pnum + 1
 end
