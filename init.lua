@@ -25,7 +25,7 @@ register_present("#bb2528", "#f0f0f0", "(Common)")
 
 minetest.register_on_dignode(function(pos, oldnode, digger)
     if not digger or not digger:is_player() then return end
-    local n = math.random(1, 400)
+    local n = math.random(1, 1000)
     if n <= 10 then
         if n == 1 then
             minetest.item_drop(ItemStack("presents:present_0"), digger, pos)
