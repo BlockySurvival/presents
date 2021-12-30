@@ -23,6 +23,7 @@ register_present("#bb2528", "#146b3a", "(Rare)")
 register_present("#146b3a", "#bb2528", "(Unusual)")
 register_present("#bb2528", "#f0f0f0", "(Common)")
 
+--[[
 minetest.register_on_dignode(function(pos, oldnode, digger)
     if not digger or not digger:is_player() then return end
     local n = math.random(1, 1000)
@@ -36,3 +37,4 @@ minetest.register_on_dignode(function(pos, oldnode, digger)
         end
     end
 end)
+]]--
